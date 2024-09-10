@@ -1,6 +1,99 @@
 .flex-parent {
     display: flex;
 }
+
 .flex-child {
     flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    height: 400px; /* Adjust based on your needs */
+}
+
+.flex-child .image {
+    width: 100%;
+    height: 300px; /* Adjust based on your needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative; /* Required for positioning the button */
+}
+
+.flex-child .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container and gets cropped */
+    display: block;
+}
+
+.flex-child .image .image-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background-color: rgba(69,72,154, 0.9); /* Ensure background for better visibility */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button styling */
+.flex-child .image .image-button {
+    height: 44px;
+    line-height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.25px;
+    transition: opacity 0.5s ease; /* Smooth transition */
+    opacity: 0; /* Initially hidden */
+}
+
+/* Reveal the button when hovering over .flex-child */
+.flex-child:hover .image .image-button {
+    opacity: 1; /* Fade in the button */
+}
+
+.image-left img {
+    object-position: top right; /* Adjust based on the desired crop */
+}
+
+/* Initial style for the sliding box */
+#sliding-box {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start off-screen */
+    width: 300px; /* Width of the sliding box */
+    height: 100%; /* Full height */
+    background-color: #fff;
+    box-shadow: -4px 0 8px rgba(0,0,0,0.2);
+    transition: right 0.5s ease; /* Smooth slide-in transition */
+    z-index: 1000; /* Ensure it's above other content */
+    overflow: auto; /* Add scrollbars if needed */
+}
+
+/* Show the sliding box when checkbox is checked */
+#toggle-slide:checked ~ #sliding-box {
+    right: 0; /* Slide into view */
+}
+
+/* Style for the close button */
+#close-button {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Style for the open button */
+.open-slide {
+    cursor: pointer;
 }
