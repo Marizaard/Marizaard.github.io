@@ -68,20 +68,89 @@
 
 /* Initial style for the sliding box */
 #sliding-box {
-    position: fixed;
-    top: 0;
-    right: -300px; /* Start off-screen */
-    width: 300px; /* Width of the sliding box */
-    height: 100%; /* Full height */
-    background-color: #fff;
+    position: absolute; /* Relative to the container now */
+    top: 10px; /* 10px padding from the top */
+    right: -100%; /* Start off-screen */
+    width: calc(100% - 20px); /* 100% width minus 20px for padding (10px each side) */
+    height: calc(100% - 20px); /* 100% height minus 20px for padding */
+    background-color: whitesmoke;
     box-shadow: -4px 0 8px rgba(0,0,0,0.2);
     transition: right 0.5s ease; /* Smooth slide-in transition */
     z-index: 1000; /* Ensure it's above other content */
-    overflow: auto; /* Add scrollbars if needed */
+    padding: 10px; /* Padding inside the sliding box */
+    overflow: auto;
+
+    /* Grid layout for content */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows, height based on content */
+    gap: 10px; /* Space between grid items */
+    
+    border: 3px solid gold;
+    border-radius: 10px;
+    /*border-image: url("../img/game_files/ClipartKey_226546.png") 30 round;*/
+}
+
+#sliding-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    column-gap: 20px; /* Space between columns */
+    padding: 10px; /* Padding inside the sliding box */
+}
+
+#sliding-content img {
+    grid-column: 1 / 2; /* Make the image occupy the first column */
+    width: 100%; /* Make sure the image resizes to fit the column */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop image if necessary */
+}
+
+.row-one-column-two {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3; /* Content in the second column */
+}
+
+/* Content for the third column */
+.row-one-column-three {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4; /* Content in the third column */
+}
+
+.row-two-column-one{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.row-two-column-two{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.row-two-column-three{
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+
+#sliding-content p, #sliding-content h2 {
+    break-inside: avoid; /* Prevents content from breaking awkwardly between columns */
 }
 
 /* Show the sliding box when checkbox is checked */
-#toggle-slide:checked ~ #sliding-box {
+#toggle-quintadovale:checked ~ #sliding-box {
+    right: 0; /* Slide into view */
+}
+#toggle-allsustainable:checked ~ #sliding-box {
+    right: 0; /* Slide into view */
+}
+#toggle-ecosphereproject:checked ~ #sliding-box {
+    right: 0; /* Slide into view */
+}
+#toggle-ourwill:checked ~ #sliding-box {
+    right: 0; /* Slide into view */
+}
+#toggle-wizardsapprentice:checked ~ #sliding-box {
     right: 0; /* Slide into view */
 }
 
@@ -91,9 +160,55 @@
     text-align: center;
     cursor: pointer;
     font-size: 20px;
+    grid-column: 1 / -1;
 }
 
 /* Style for the open button */
 .open-slide {
     cursor: pointer;
 }
+
+/* Slider container */
+.image-slider {
+    position: relative;
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2; /* First column */
+    grid-row: 1 / 2; /* First row */
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Adjust this to fit your layout */
+    object-fit: cover;
+}
+
+/* Arrow button styles */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
