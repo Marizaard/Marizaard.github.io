@@ -290,6 +290,18 @@ input[type="checkbox"]:checked + .sliding-box {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .soft-skills {
+        grid-template-columns: repeat(1, 1fr); /* Change to 2 columns on medium-sized screens (tablets) */
+    }
+}
+
+@media (max-width: 480px) {
+    .soft-skills {
+        grid-template-columns: 1fr; /* Stack all columns vertically on small screens (mobile) */
+    }
+}
+
 /* soft skills table */
 table {
     width: 70%;
