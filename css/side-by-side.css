@@ -68,21 +68,39 @@
 
 /* Initial style for the sliding box */
 .sliding-box {
-    position: absolute;
+    position: fixed;
     top: calc(180px);
-    right: -100%;
     width: calc(100% - 20px); /* Full width minus padding */
     height: auto;
-    box-shadow: -4px 0 8px rgba(0,0,0,0.2);
-    transition: right 0.5s ease;
+    /*transition: right 0.5s ease;*/
+    transition: opacity 0.8s ease, visibility 0.5s ease;
     z-index: 1000;
     padding: 30px;
     overflow: auto;
-    background-color: whitesmoke;
     border-radius: 10px;
-
+    background-color: transparent;
     display: flex; /* Change display to flex for centering */
     justify-content: center; /* Center content */
+    
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sliding-box.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.section-content-games {
+    opacity: 1;
+    transition: opacity 0.8s ease;
+    visibility: visible;
+}
+
+.section-content-games.fade-out{
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    visibility: hidden;
 }
 
 /* Center the content and set a maximum width */

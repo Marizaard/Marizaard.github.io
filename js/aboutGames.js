@@ -82,14 +82,15 @@ function showBox(index) {
     });
 }
 
-function showBox2(boxKey) {
+function fadeInBox(boxKey) {
     boxes.forEach(box => {
         if (box.getAttribute('data-box') === boxKey) {
+            console.log("here");
             box.classList.add('active'); // Show the current box
             box.style.right = '0'; // Slide it into view
+
         } else {
             box.classList.remove('active'); // Hide other boxes
-            box.style.right = '-100%'; // Slide out of view
         }
     });
 }
@@ -119,7 +120,7 @@ document.querySelectorAll('.close-button').forEach(closeBtn => {
     });
 });
 
-document.querySelectorAll('.image-button').forEach(imgBtn => {
+/*document.querySelectorAll('.image-button').forEach(imgBtn => {
     document.querySelectorAll('.image-button').forEach(imgBtn => {
         imgBtn.addEventListener('click', function () {
             const openSlideLabel = this.querySelector('.open-slide');
@@ -127,6 +128,30 @@ document.querySelectorAll('.image-button').forEach(imgBtn => {
             showBox2(toggleId); // Show the corresponding sliding box
             console.log("Continue Reading clicked! Sliding box opened for:", toggleId);
         });
+    });
+});*/
+
+document.querySelectorAll('.image-button').forEach(button => {
+    button.addEventListener('click', function() {
+        // Add the 'fade-out' class to fade out the current section-content
+        document.querySelector('.section-content-games').classList.add('fade-out');
+        const openSlideLabel = this.querySelector('.open-slide');
+        const toggleId = openSlideLabel.getAttribute('for'); // Get the ID from the for attribute
+        fadeInBox(toggleId); // Show the corresponding sliding box
+
+        // Add the 'active' class to the sliding-box to make it appear
+        document.querySelector('.sliding-box').classList.add('active');
+    });
+});
+
+// Close the sliding-box when the close-button is clicked
+document.querySelectorAll('.close-button').forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove the 'fade-out' class to bring back the section content
+        document.querySelector('.section-content-games').classList.remove('fade-out');
+
+        // Hide the currently active sliding box
+        this.closest('.sliding-box').classList.remove('active');
     });
 });
 
