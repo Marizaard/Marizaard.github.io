@@ -1,14 +1,47 @@
 // Array of images to switch between
 const imagesArray = {
-    'sliding-box-1': [
+    'toggle-quintadovale': [
         'img/game_files/quinta_do_vale_logo.PNG',
-        'img/game_files/all_sustainable.PNG',
-        'img/game_files/another_image2.PNG'
+        'img/game_files/quinta_do_vale_1.jpg',
+        'img/game_files/quinta_do_vale_2.jpg',
+        'img/game_files/quinta_do_vale_4.jpg',
+        'img/game_files/quinta_do_vale_6.jpg',
+        'img/game_files/quinta_do_vale_7.jpg',
     ],
-    'sliding-box-2': [
-        'img/game_files/another_image.PNG',
-        'img/game_files/yet_another_image.PNG',
-        'img/game_files/last_image.PNG'
+    'toggle-allsustainable': [
+        'img/game_files/all_sustainable_logo.png',
+        'img/game_files/all_sustainable_1.png',
+        'img/game_files/all_sustainable_2.png',
+        'img/game_files/all_sustainable_3.png',
+        'img/game_files/all_sustainable_4.png',
+        'img/game_files/all_sustainable_5.png',
+        'img/game_files/all_sustainable_6.png',
+    ],
+    'toggle-ecosphereproject': [
+        'img/game_files/all_sustainable_logo.png',
+        'img/game_files/all_sustainable_1.png',
+        'img/game_files/all_sustainable_2.png',
+        'img/game_files/all_sustainable_3.png',
+        'img/game_files/all_sustainable_4.png',
+        'img/game_files/all_sustainable_5.png',
+        'img/game_files/all_sustainable_6.png',
+    ],
+    'toggle-ourwill': [
+        'img/game_files/our_will_logo.jpg',
+        'img/game_files/our_will_1.jpg',
+        'img/game_files/our_will_4.png',
+        'img/game_files/our_will_2.png',
+        'img/game_files/our_will_6.png',
+        'img/game_files/our_will_7.png',
+    ],
+    'toggle-wizardsapprentice': [
+        'img/game_files/all_sustainable_logo.png',
+        'img/game_files/all_sustainable_1.png',
+        'img/game_files/all_sustainable_2.png',
+        'img/game_files/all_sustainable_3.png',
+        'img/game_files/all_sustainable_4.png',
+        'img/game_files/all_sustainable_5.png',
+        'img/game_files/all_sustainable_6.png',
     ]
 };
 
