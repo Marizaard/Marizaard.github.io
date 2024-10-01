@@ -48,8 +48,7 @@
 /* Button styling */
 .flex-child .image .image-button {
     height: 44px;
-    line-height: 44px;
-    font-size: 13px;
+    font-size: 1.5vh;
     font-weight: 600;
     text-transform: capitalize;
     letter-spacing: 0.25px;
@@ -68,10 +67,10 @@
 
 /* Initial style for the sliding box */
 .sliding-box {
-    position: fixed;
-    top: calc(180px);
+    position: absolute;
     width: calc(100% - 20px); /* Full width minus padding */
     height: auto;
+    max-height: calc(100vh - 180px);
     /*transition: right 0.5s ease;*/
     transition: opacity 0.8s ease, visibility 0.5s ease;
     z-index: 1000;
@@ -95,6 +94,7 @@
     opacity: 1;
     transition: opacity 0.8s ease;
     visibility: visible;
+    padding: 20px;
 }
 
 .section-content-games.fade-out{
@@ -123,6 +123,7 @@
 .image-slider img {
     width: 100%; /* Ensure the image fills the column */
     height: auto;
+    margin-top: 30px;
     max-height: 250px; /* Limit height */
     object-fit: cover; /* Crop if necessary to fill the space */
 }
@@ -138,6 +139,38 @@
     grid-row: 1; /* First row */
 }
 
+@media (max-width: 768px) {
+    .sliding-content {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+        gap: 20px;
+    }
+
+    .image-slider {
+        grid-column: 1 / 2; /* Image will appear first */
+        grid-row: 1;
+    }
+
+    .row-one-column-two {
+        grid-column: 1 / 2; /* Description and job will appear below the image */
+        grid-row: 2;
+    }
+
+    .row-one-column-three {
+        grid-column: 1 / 2; /* Stats and links will appear below the description and job */
+        grid-row: 3;
+    }
+
+    .sliding-box {
+        position: absolute; /* Change to absolute on smaller screens to prevent overlap */
+        top: 250px;
+        left: 0;
+        right: 0;
+        bottom: 0; /* Allow the sliding box to expand to the bottom */
+        max-height: calc(100vh - 180px); /* Set the max height to prevent content from going off-screen */
+        overflow-y: auto; /* Allow scrolling if content exceeds the view height */
+    }
+}
+
 /* Ensuring the text does not break awkwardly */
 #sliding-content p, #sliding-content h3 {
     break-inside: avoid; /* Prevents content from breaking awkwardly */
@@ -147,7 +180,6 @@ input[type="checkbox"]:checked + .sliding-box {
     display: block; /* Show when checked */
 }
 
-
 /* Show the sliding box when checkbox is checked */
 #toggle-quintadovale:checked + .sliding-box[data-box="sliding-box-1"],
 #toggle-allsustainable:checked + .sliding-box,
@@ -155,6 +187,17 @@ input[type="checkbox"]:checked + .sliding-box {
 #toggle-ourwill:checked + .sliding-box,
 #toggle-wizardsapprentice:checked + .sliding-box {
     right: 0; /* Slide into view */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.section-heading {
+    position: relative; /* Ensure this element is positioned */
+    z-index: 10; /* Higher z-index to stay above buttons */
+    margin-bottom: 20px; /* Adjust margin as necessary */
 }
 
 /* Style for the close button */
@@ -168,6 +211,7 @@ input[type="checkbox"]:checked + .sliding-box {
     grid-column: 1 / -1;
     background-color: #45489a;
     color: white;
+    z-index: 1000;
 
     padding: 5px 15px; /* Adjust padding for the size of the rectangle */
     border-radius: 5px; /* Optionally round the corners */
@@ -196,7 +240,7 @@ input[type="checkbox"]:checked + .sliding-box {
     border: none; /* Remove border */
     color: whitesmoke; /* Arrow color */
     background-color:  #45489a;
-    z-index: 2000;
+    z-index: 5;
 
     padding: 5px 15px; /* Adjust padding for the size of the rectangle */
     border-radius: 5px; /* Optionally round the corners */
