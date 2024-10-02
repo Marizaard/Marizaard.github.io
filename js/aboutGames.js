@@ -18,13 +18,12 @@ const imagesArray = {
         'img/game_files/all_sustainable_6.png',
     ],
     'toggle-ecosphereproject': [
-        'img/game_files/all_sustainable_logo.png',
-        'img/game_files/all_sustainable_1.png',
-        'img/game_files/all_sustainable_2.png',
-        'img/game_files/all_sustainable_3.png',
-        'img/game_files/all_sustainable_4.png',
-        'img/game_files/all_sustainable_5.png',
-        'img/game_files/all_sustainable_6.png',
+        'img/game_files/ecosphere_project_logo.png',
+        'img/game_files/eco_1.png',
+        'img/game_files/eco_2.png',
+        'img/game_files/eco_3.png',
+        'img/game_files/eco_4.png',
+        'img/game_files/eco_5.png',
     ],
     'toggle-ourwill': [
         'img/game_files/our_will_logo.jpg',
@@ -35,13 +34,27 @@ const imagesArray = {
         'img/game_files/our_will_7.png',
     ],
     'toggle-wizardsapprentice': [
-        'img/game_files/all_sustainable_logo.png',
-        'img/game_files/all_sustainable_1.png',
-        'img/game_files/all_sustainable_2.png',
-        'img/game_files/all_sustainable_3.png',
-        'img/game_files/all_sustainable_4.png',
-        'img/game_files/all_sustainable_5.png',
-        'img/game_files/all_sustainable_6.png',
+        'img/game_files/wizards_2.jpg',
+        'img/game_files/wizards_3.png',
+        'img/game_files/wizards_5.jpg',
+        'img/game_files/wizards_10.jpg',
+        'img/game_files/wizards_7.jpg',
+        'img/game_files/wizards_8.jpg',
+        'img/game_files/wizards_9.jpg',
+        'img/game_files/wizards_12.jpg',
+        'img/game_files/wizards_15.jpg',
+        'img/game_files/wizards_17.png',
+    ],
+
+    'toggle-rootingforyou': [
+        'img/game_files/rooting_1.png',
+        'img/game_files/rooting_6.png',
+        'img/game_files/rooting_10.png',
+        'img/game_files/rooting_9.png',
+        'img/game_files/rooting_12.png',
+        'img/game_files/rooting_4.png',
+        'img/game_files/rooting_2.png',
+        'img/game_files/rooting_11.png',
     ]
 };
 
@@ -84,12 +97,15 @@ function showBox(index) {
 
 function fadeInBox(boxKey) {
     boxes.forEach(box => {
+        //const contentSection = document.querySelector('.section-content-games');
+        
         if (box.getAttribute('data-box') === boxKey) {
             box.classList.add('active'); // Show the current box
-            box.style.right = '0'; // Slide it into view
-
+            box.scrollIntoView();
+            //contentSection.classList.add('collapsed');
         } else {
             box.classList.remove('active'); // Hide other boxes
+            //contentSection.classList.remove('collapsed');
         }
     });
 }
@@ -139,6 +155,7 @@ document.querySelectorAll('.close-button').forEach(button => {
         this.closest('.sliding-box').classList.remove('active');
     });
 });
+
 
 
 

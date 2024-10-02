@@ -1,15 +1,47 @@
+.about-image {
+    float: left;
+    padding-right: 20px;
+    max-width: 30vh; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 20px; /* Add space between the image and text */
+    border-radius: 1500px;
+}
+
+.about-container p {
+    margin: 0; /* Remove default margins for cleaner alignment */
+}
+
+.about-text{
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack the image and text on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .about-image {
+        margin-right: 0; /* Remove margin on small screens */
+        margin-bottom: 15px; /* Add space below the image */
+    }
+}
+
 .flex-parent {
     display: flex;
+    justify-content: space-between;
 }
 
 .flex-child {
-    flex: 1;
+    flex: 1 1 300px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2px;
     height: auto; /* Adjust based on your needs */
+    justify-content: flex-start;
+    transition: height 0.5s ease;
 }
 
 .flex-child .image {
@@ -65,17 +97,32 @@
     object-position: center; /* Adjust based on the desired crop */
 }
 
+@media (max-width: 768px) {
+    .flex-parent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .flex-child {
+        flex: 1 1 100%; /* Make each item take full width on smaller screens */
+    }
+
+    .flex-child .image {
+        height: 300px; /* Adjust height to auto for better responsiveness */
+    }
+}
+
 /* Initial style for the sliding box */
 .sliding-box {
     position: absolute;
     width: calc(100% - 20px); /* Full width minus padding */
     height: auto;
-    max-height: calc(100vh - 180px);
     /*transition: right 0.5s ease;*/
     transition: opacity 0.8s ease, visibility 0.5s ease;
     z-index: 1000;
     padding: 30px;
-    overflow: auto;
+    overflow: visible;
     border-radius: 10px;
     background-color: transparent;
     display: flex; /* Change display to flex for centering */
@@ -88,13 +135,26 @@
 .sliding-box.active {
     opacity: 1;
     visibility: visible;
+    position: fixed;
+    left: 0;
+    overflow: visible;
 }
 
 .section-content-games {
     opacity: 1;
-    transition: opacity 0.8s ease;
+    transition: opacity 0.8s ease, height 0.5s ease, visibility 0.5s ease;
     visibility: visible;
     padding: 20px;
+    justify-content: space-between;
+    height: auto;
+}
+
+.section-content-games.collapsed {
+    opacity: 0;
+    visibility: hidden;
+    height: 0; /* Collapse the height */
+    padding: 0; /* Remove padding to fully collapse */
+    transition: opacity 0.8s ease, height 0.5s ease, visibility 0.5s ease;
 }
 
 .section-content-games.fade-out{
@@ -167,7 +227,12 @@
         right: 0;
         bottom: 0; /* Allow the sliding box to expand to the bottom */
         max-height: calc(100vh - 180px); /* Set the max height to prevent content from going off-screen */
-        overflow-y: auto; /* Allow scrolling if content exceeds the view height */
+        overflow-y: visible; /* Allow scrolling if content exceeds the view height */
+        scroll-behavior: smooth;
+    }
+    .section-content-games {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
 
@@ -185,7 +250,8 @@ input[type="checkbox"]:checked + .sliding-box {
 #toggle-allsustainable:checked + .sliding-box,
 #toggle-ecosphereproject:checked + .sliding-box,
 #toggle-ourwill:checked + .sliding-box,
-#toggle-wizardsapprentice:checked + .sliding-box {
+#toggle-wizardsapprentice:checked + .sliding-box,
+#toggle-rootingforyou:checked + .sliding-box {
     right: 0; /* Slide into view */
 }
 
@@ -332,6 +398,17 @@ input[type="checkbox"]:checked + .sliding-box {
     padding: 20px;
     border: 1px solid #ccc;
     text-align: center;
+}
+
+.contact-links {
+    display: flex; /* Use flexbox to arrange items in a row */
+    align-items: center; /* Align items vertically centered */
+    justify-content: center;
+    gap: 15px; /* Space between items, adjust as needed */
+}
+
+.contact-links p {
+    margin: 0; /* Remove default margin from <p> tags */
 }
 
 @media (max-width: 768px) {
