@@ -1,10 +1,10 @@
 .about-image {
     float: left;
     padding-right: 20px;
-    max-width: 30vh; /* Adjust the width as needed */
+    max-width: 40vh; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
     margin-right: 20px; /* Add space between the image and text */
-    border-radius: 1500px;
+    border-radius: 50%;
 }
 
 .about-container p {
