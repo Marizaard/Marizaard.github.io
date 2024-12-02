@@ -34,16 +34,12 @@ const imagesArray = {
         'img/game_files/our_will_7.png',
     ],
     'toggle-wizardsapprentice': [
-        'img/game_files/wizards_2.jpg',
+        'img/game_files/wizards_1.png',
+        'img/game_files/wizards_2.png',
         'img/game_files/wizards_3.png',
-        'img/game_files/wizards_5.jpg',
-        'img/game_files/wizards_10.jpg',
-        'img/game_files/wizards_7.jpg',
-        'img/game_files/wizards_8.jpg',
-        'img/game_files/wizards_9.jpg',
-        'img/game_files/wizards_12.jpg',
-        'img/game_files/wizards_15.jpg',
-        'img/game_files/wizards_17.png',
+        'img/game_files/wizards_4.png',
+        'img/game_files/wizards_5.png',
+        'img/game_files/wizards_6.png',
     ],
 
     'toggle-rootingforyou': [
