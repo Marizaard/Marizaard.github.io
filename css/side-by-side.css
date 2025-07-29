@@ -270,12 +270,13 @@ input[type="checkbox"]:checked + .sliding-box {
 .close-button{
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: auto;
+    right: 10px;
     text-align: center;
     cursor: pointer;
     font-size: 15px;
     grid-column: 1 / -1;
-    background-color: #45489a;
+    background-color: darkred;
     color: white;
     z-index: 1000;
 
@@ -328,13 +329,12 @@ input[type="checkbox"]:checked + .sliding-box {
 
 /* Left arrow (placed near the right arrow) */
 .arrow-left-next-game {
-    right: 65px; /* Position to the left of the right arrow */
-    padding-right: 20px;
+    left: 30px; /* Position to the left of the right arrow */
 }
 
 /* Right arrow */
 .arrow-right-next-game {
-    right: 20px; /* Position to the right corner */
+    left: 75px; /* Position to the right corner */
 }
 
 /* Style for the open button */

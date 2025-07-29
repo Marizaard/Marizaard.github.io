@@ -42,15 +42,12 @@ const imagesArray = {
         'img/game_files/wizards_6.png',
     ],
 
-    'toggle-rootingforyou': [
-        'img/game_files/rooting_1.png',
-        'img/game_files/rooting_6.png',
-        'img/game_files/rooting_10.png',
-        'img/game_files/rooting_9.png',
-        'img/game_files/rooting_12.png',
-        'img/game_files/rooting_4.png',
-        'img/game_files/rooting_2.png',
-        'img/game_files/rooting_11.png',
+    'toggle-pigeon': [
+        'img/game_files/pigeon_1.png',
+        'img/game_files/pigeon_2.png',
+        'img/game_files/pigeon_3.png',
+        'img/game_files/pigeon_4.png',
+        'img/game_files/pigeon_5.png',
     ]
 };
 

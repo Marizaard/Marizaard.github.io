@@ -185,7 +185,7 @@ https://templatemo.com/tm-518-sentra
                         <img class="about-image" src="img/me_remote.jpg" alt="Me">
                         
                         <div class="about-text">
-                            <p>If'm a fresh from college game dev who majored in video games and cybersecurity in Instituto Superior Técnico in Lisbon, Portugal. I have been making games as a hobby for the last 6 years. I'm a part of the game dev student association GameDev Técnico and have been actively working with them for the last 3 years.</p>
+                            <p>I'm a fresh from college game dev who majored in video games and cybersecurity in Instituto Superior Técnico in Lisbon, Portugal. I have been making games as a hobby for the last 6 years. I'm a part of the game dev student association GameDev Técnico and have been actively working with them for the last 3 years.</p>
                             <br>
                             <p>But what makes me tick?</p>
                             <br>
@@ -211,6 +211,7 @@ https://templatemo.com/tm-518-sentra
                 <input type="checkbox" id="toggle-quintadovale" hidden>
                 <div class="sliding-box" data-box="toggle-quintadovale">
                     <label for="toggle-quintadovale" class="close-button">X</label>
+                    <button class="close-button" onclick="document.getElementById('toggle-quintadovale').checked = false;">X</button>
                     <button class="arrow-button-next-game arrow-left-next-game">&lt;</button>
                     <button class="arrow-button-next-game arrow-right-next-game">&gt;</button>
                     <div class="sliding-content">
@@ -248,15 +249,15 @@ https://templatemo.com/tm-518-sentra
                         </div>
                     </div>
                 </div>
-
-                <input type="checkbox" id="toggle-allsustainable" hidden>
-                <div class="sliding-box" data-box="toggle-allsustainable">
-                    <label for="toggle-allsustainable" class="close-button">X</label>
+                
+                <input type="checkbox" id="toggle-pigeon" hidden>
+                <div class="sliding-box" data-box="toggle-pigeon">
+                    <label for="toggle-pigeon" class="close-button">X</label>
                     <button class="arrow-button-next-game arrow-left-next-game">&lt;</button>
                     <button class="arrow-button-next-game arrow-right-next-game">&gt;</button>
                     <div class="sliding-content">
                         <div class="image-slider">
-                            <img class="slider-image" src="img/game_files/all_sustainable_logo.png" alt="Image Slider">
+                            <img class="slider-image" src="img/game_files/pigeon_1.png" alt="Image Slider">
                             <!-- Arrow buttons (optional) -->
                             <button class="arrow left-arrow" onclick="changeImage(-1)">&lt;</button>
                             <button class="arrow right-arrow" onclick="changeImage(1)">&gt;</button>
@@ -265,27 +266,67 @@ https://templatemo.com/tm-518-sentra
                         <div class="row-one-column-two">
                             <h3>Description</h3>
                             <hr>
-                            <p>This game was in partnership with the Erasmus+ program and follows two heroes trying to save their world from an impending catastrophe. This game has the objective of teaching people with intellectual disabilities to be active and sustainable citizens.</p>
+                            <p>This was one of the first jam games I made in Barking Beagle Studios. It was the winner for the 2025 FNAC New Talents Award. It's a short RPG game about a pigeon who serves as a spy for the government. It focuses heavily on narrative, and it's meant to be replayed multiple times to discover all endings.</p>
                             <h3>My job</h3>
                             <hr>
-                            <p>Team lead, design, internal system programming, UX developer, and accessibility testing and programming. I co-designed the game with the population, programmed all the major core systems of the game, tested the game with the target audience and aided in the production of marketing assets.</p>
+                            <p>Design, internal system programming, UX designer, and UI developer. In this game I was the lead programmer, and implemented a narrative system from scratch. I coded this system in such a way as to allow the writer to create methods, conditions, and variables in the narrative so they could be used alongside Unity.</p>
                         </div>
 
                         <div class="row-one-column-three">
                             <h3>Stats</h3>
                             <hr>
-                            <p>Platforms: PC, Android, and Web Browser</p>
-                            <p>Team size: 4 core members (3 programmers, 1 artist)</p>
-                            <p>Project lenght: 1 year (2 months design, 5 months developing and 3 months testing and bug fixing)</p>
-                            <p>Engine and Tools: Unity, ink, DOTween, Google Docs, Notion</p>
+                            <p>Platforms: PC</p>
+                            <p>Team size: 5 members (2 programmers, 2 artists, 1 writer)</p>
+                            <p>Project lenght: 1 week</p>
+                            <p>Engine and Tools: Unity, Google Docs, Google Sheets</p>
                             <h3>Links</h3>
                             <hr>
-                            <p><a href="https://all-sustainable.itch.io/all-sustainable" target="_blank">Itch.io Release</a>,
-                                <a href="https://all-sustainable.inesc-id.pt/" target="_blank">All Sustainable Project Page</a></p>
+                            <p><a href="https://barking-beagle-studios.itch.io/pigeon" target="_blank">Itch.io</a>,
+                            <p><a href="https://www.youtube.com/watch?v=HILpx0VdzWE" target="_blank">Trailer</a>,
+                            <p><a href="https://www.fnac.pt/novostalentos" target="_blank">FNAC New Talents 2025 Winners</a>,
+                            <p><a href="https://rdpinternacional.rtp.pt/destaques/barking-beagle-studios" target="_blank">RDP Internacional Podcast on P.I.G.E.O.N.</a>,
+                            <p><a href="https://marketeer.sapo.pt/do-cinema-a-ilustracao-fnac-revela-vencedores-dos-novos-talentos-2025/" target="_blank">Article on P.I.G.E.O.N.</a>
                         </div>
                     </div>
                 </div>
-             
+
+                <input type="checkbox" id="toggle-wizardsapprentice" hidden>
+                <div class="sliding-box" data-box="toggle-wizardsapprentice">
+                    <label for="toggle-wizardsapprentice" class="close-button">X</label>
+                    <button class="arrow-button-next-game arrow-left-next-game">&lt;</button>
+                    <button class="arrow-button-next-game arrow-right-next-game">&gt;</button>
+                    <div class="sliding-content">
+                        <div class="image-slider">
+                            <img class="slider-image" src="img/game_files/wizards_1.png" alt="Image Slider">
+                            <!-- Arrow buttons (optional) -->
+                            <button class="arrow left-arrow" onclick="changeImage(-1)">&lt;</button>
+                            <button class="arrow right-arrow" onclick="changeImage(1)">&gt;</button>
+                        </div>
+
+                        <div class="row-one-column-two">
+                            <h3>Description</h3>
+                            <hr>
+                            <p>This was my first project in Barking Beagle Studios. This game focuses around a wizard that is failing at their school of magic and is determined to find a new means to perform the art. It's an Adventure-RPG game in which the gameplay involves combining items to create the spells to use in combat.</p>
+                            <h3>My job</h3>
+                            <hr>
+                            <p>Design, internal system programming, UX designer and developer, and narrative writing. I led the design of this game, coded the combat systems, enemy state machine and behaviours, and implemented the UI and quality-of-life improvements of the prototype.</p>
+                        </div>
+
+                        <div class="row-one-column-three">
+                            <h3>Stats</h3>
+                            <hr>
+                            <p>Platforms: PC</p>
+                            <p>Team size: 4 members (2 programmers, 2 artists)</p>
+                            <p>Project lenght: 10 months (2 months prototype, 3 months design, 5 months developing)</p>
+                            <p>Engine and Tools: Unity, Google Docs, Notion</p>
+                            <h3>Links</h3>
+                            <hr>
+                            <p><a href="https://youtu.be/f3RA1NrUNOc" target="_blank">Game Trailer</a>
+                            <p><a href="https://youtu.be/gl-tHl_Uzqc" target="_blank">Gameplay Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
                 <input type="checkbox" id="toggle-ecosphereproject" hidden>
                 <div class="sliding-box" data-box="toggle-ecosphereproject">
                     <label for="toggle-ecosphereproject" class="close-button">X</label>
@@ -318,13 +359,52 @@ https://templatemo.com/tm-518-sentra
                             <h3>Links</h3>
                             <hr>
                             <p><a href="https://nomig.itch.io/the-ecosphere-project" target="_blank">Itch.io Page</a>,
+                                <a href="https://www.youtube.com/watch?v=7NrR_nLGw6o" target="_blank">Trailer</a>,
+                                <a href="https://www.youtube.com/watch?v=ib7YkdnA88I" target="_blank">Gameplay Trailer</a>,
                                 <a href="https://gamedev.tecnico.ulisboa.pt/game_project/the-ecosphere-project/" target="_blank">Project Page</a>,
                                 <a href="https://salaodejogos.net/todos-os-vencedores-da-edicao-dos-premios-playstation-talents-em-portugal-2023/" target="_blank">Article participation in Playstation Awards 2023</a>,
                                 <a href="https://www.record.pt/record-gaming/detalhe/premios-playstation-talents-portugal-aqui-estao-os-finalistas-da-9-edicao" target="_blank">More Articles</a>
                         </div>
                     </div>
                 </div>
-                
+
+                <input type="checkbox" id="toggle-allsustainable" hidden>
+                <div class="sliding-box" data-box="toggle-allsustainable">
+                    <label for="toggle-allsustainable" class="close-button">X</label>
+                    <button class="arrow-button-next-game arrow-left-next-game">&lt;</button>
+                    <button class="arrow-button-next-game arrow-right-next-game">&gt;</button>
+                    <div class="sliding-content">
+                        <div class="image-slider">
+                            <img class="slider-image" src="img/game_files/all_sustainable_logo.png" alt="Image Slider">
+                            <button class="arrow left-arrow" onclick="changeImage(-1)">&lt;</button>
+                            <button class="arrow right-arrow" onclick="changeImage(1)">&gt;</button>
+                        </div>
+
+                        <div class="row-one-column-two">
+                            <h3>Description</h3>
+                            <hr>
+                            <p>This game was in partnership with the Erasmus+ program and follows two heroes trying to save their world from an impending catastrophe. This game has the objective of teaching people with intellectual disabilities to be active and sustainable citizens.</p>
+                            <h3>My job</h3>
+                            <hr>
+                            <p>Team lead, design, internal system programming, UX developer, and accessibility testing and programming. I co-designed the game with the population, programmed all the major core systems of the game, tested the game with the target audience and aided in the production of marketing assets.</p>
+                        </div>
+
+                        <div class="row-one-column-three">
+                            <h3>Stats</h3>
+                            <hr>
+                            <p>Platforms: PC, Android, and Web Browser</p>
+                            <p>Team size: 4 core members (3 programmers, 1 artist)</p>
+                            <p>Project lenght: 1 year (2 months design, 5 months developing and 3 months testing and bug fixing)</p>
+                            <p>Engine and Tools: Unity, ink, DOTween, Google Docs, Notion</p>
+                            <h3>Links</h3>
+                            <hr>
+                            <p><a href="https://all-sustainable.itch.io/all-sustainable" target="_blank">Itch.io Release</a>,
+                                <a href="https://www.youtube.com/watch?v=RzWuBY7-CGc" target="_blank">Game Trailer</a>,
+                                <a href="https://all-sustainable.inesc-id.pt/" target="_blank">All Sustainable Project Page</a></p>
+                        </div>
+                    </div>
+                </div>
+             
                 <input type="checkbox" id="toggle-ourwill" hidden>
                 <div class="sliding-box" data-box="toggle-ourwill">
                     <label for="toggle-ourwill" class="close-button">X</label>
@@ -363,78 +443,7 @@ https://templatemo.com/tm-518-sentra
                     </div>
                 </div>
 
-                <input type="checkbox" id="toggle-wizardsapprentice" hidden>
-                <div class="sliding-box" data-box="toggle-wizardsapprentice">
-                    <label for="toggle-wizardsapprentice" class="close-button">X</label>
-                    <button class="arrow-button-next-game arrow-left-next-game">&lt;</button>
-                    <button class="arrow-button-next-game arrow-right-next-game">&gt;</button>
-                    <div class="sliding-content">
-                        <div class="image-slider">
-                            <img class="slider-image" src="img/game_files/wizards_1.png" alt="Image Slider">
-                            <!-- Arrow buttons (optional) -->
-                            <button class="arrow left-arrow" onclick="changeImage(-1)">&lt;</button>
-                            <button class="arrow right-arrow" onclick="changeImage(1)">&gt;</button>
-                        </div>
-
-                        <div class="row-one-column-two">
-                            <h3>Description</h3>
-                            <hr>
-                            <p>This is a newly started project that focuses around a wizard that is failing at their school of magic and is determined to find a new means to perform the art. It's an Adventure-RPG game in which the gameplay involves combining items to create the spells to use in combat.</p>
-                            <h3>My job</h3>
-                            <hr>
-                            <p>Design, internal system programming, UX designer and developer, and narrative writing. I lead the design of this game, coded the combat systems, enemy state machine and behaviours, as well as in the design of the UI and quality-of-life improvements of the prototype.</p>
-                        </div>
-
-                        <div class="row-one-column-three">
-                            <h3>Stats</h3>
-                            <hr>
-                            <p>Platforms: PC</p>
-                            <p>Team size: 3 members (2 programmers, 1 artist)</p>
-                            <p>Project lenght: 10 months (2 months prototype, 3 months design, 5 months developing)</p>
-                            <p>Engine and Tools: Unity, Google Docs, Notion</p>
-                            <h3>Links</h3>
-                            <hr>
-                            <p><a href="https://youtu.be/f3RA1NrUNOc" target="_blank">Game Trailer</a>
-                            <p><a href="https://youtu.be/gl-tHl_Uzqc" target="_blank">Gameplay Trailer</a>
-                        </div>
-                    </div>
-                </div>
-
-                <input type="checkbox" id="toggle-rootingforyou" hidden>
-                <div class="sliding-box" data-box="toggle-rootingforyou">
-                    <label for="toggle-rootingforyou" class="close-button">X</label>
-                    <button class="arrow-button-next-game arrow-left-next-game">&lt;</button>
-                    <button class="arrow-button-next-game arrow-right-next-game">&gt;</button>
-                    <div class="sliding-content">
-                        <div class="image-slider">
-                            <img class="slider-image" src="img/game_files/rooting_1.png" alt="Image Slider">
-                            <!-- Arrow buttons (optional) -->
-                            <button class="arrow left-arrow" onclick="changeImage(-1)">&lt;</button>
-                            <button class="arrow right-arrow" onclick="changeImage(1)">&gt;</button>
-                        </div>
-
-                        <div class="row-one-column-two">
-                            <h3>Description</h3>
-                            <hr>
-                            <p>This a game created for the GBJam of 2022. It's a short game about taking care of a plant in the span of 3 in-game days. It focuses heavily on narrative and it's meant to be a game the player replayes to enjoy the multiple endings.</p>
-                            <h3>My job</h3>
-                            <hr>
-                            <p>Design, internal system programming, UX and UI designer and developer, and narrative writing. In this game I took the main role of progammer, as well as narrative writer and UI artist. I coded not only the main framework for the game, but the palette system and narrative system.</p>
-                        </div>
-
-                        <div class="row-one-column-three">
-                            <h3>Stats</h3>
-                            <hr>
-                            <p>Platforms: PC</p>
-                            <p>Team size: 4 members (1 programmers, 1 artist, 1 programmer and artist, 1 sound designer)</p>
-                            <p>Project lenght: 1 1/2 weeks</p>
-                            <p>Engine and Tools: Unity, ink, Google Docs</p>
-                            <h3>Links</h3>
-                            <hr>
-                            <p><a href="https://karane.itch.io/im-rooting-for-you" target="_blank">Itch.io</a>
-                        </div>
-                    </div>
-                </div>
+             
 
                 <div class="section-content-games">
                     <div class="flex-parent">
@@ -452,38 +461,14 @@ https://templatemo.com/tm-518-sentra
                         </div>
                         <div class="flex-child">
                             <div class="image image-left">
-                                <img src="img/game_files/all-sustainable-cover.png" alt="">
+                                <img src="img/game_files/pigeon-cover.png" alt="">
                                 <button class="image-button">
-                                    <label for="toggle-allsustainable" class="open-slide">Continue Reading</label>
+                                    <label for="toggle-pigeon" class="open-slide">Continue Reading</label>
                                 </button>
                             </div>
                             <div class="text-content">
-                                <h4>All Sustainable</h4>
-                                <p>Educational Adventure Point&Click</p>
-                            </div>
-                        </div>
-                        <div class="flex-child">
-                            <div class="image image-left">
-                                <img src="img/game_files/ecosphere-project-cover.png" alt="">
-                                <button class="image-button">
-                                    <label for="toggle-ecosphereproject" class="open-slide">Continue Reading</label>
-                                </button>
-                            </div>
-                            <div class="text-content">
-                                <h4>The Ecosphere Project</h4>
-                                <p>Simulator Card-Strategy</p>
-                            </div>
-                        </div>
-                        <div class="flex-child">
-                            <div class="image image-left">
-                                <img src="img/game_files/our-will-cover.png" alt="">
-                                <button class="image-button">
-                                    <label for="toggle-ourwill" class="open-slide">Continue Reading</label>
-                                </button>
-                            </div>
-                            <div class="text-content">
-                                <h4>Our Will</h4>
-                                <p>Tactical RPG</p>
+                                <h4>P.I.G.E.O.N.</h4>
+                                <p>Short Story-Driven RPG</p>
                             </div>
                         </div>
                         <div class="flex-child">
@@ -500,19 +485,43 @@ https://templatemo.com/tm-518-sentra
                         </div>
                         <div class="flex-child">
                             <div class="image image-left">
-                                <img src="img/game_files/rooting_5.png" alt="">
+                                <img src="img/game_files/ecosphere-project-cover.png" alt="">
                                 <button class="image-button">
-                                    <label for="toggle-rootingforyou" class="open-slide">Continue Reading</label>
+                                    <label for="toggle-ecosphereproject" class="open-slide">Continue Reading</label>
                                 </button>
                             </div>
                             <div class="text-content">
-                                <h4>I'm Rooting for You</h4>
-                                <p>GameBoy Virtual Pet Simulator</p>
+                                <h4>The Ecosphere Project</h4>
+                                <p>Simulator Card-Strategy</p>
+                            </div>
+                        </div>
+                        <div class="flex-child">
+                            <div class="image image-left">
+                                <img src="img/game_files/all-sustainable-cover.png" alt="">
+                                <button class="image-button">
+                                    <label for="toggle-allsustainable" class="open-slide">Continue Reading</label>
+                                </button>
+                            </div>
+                            <div class="text-content">
+                                <h4>All Sustainable</h4>
+                                <p>Educational Adventure Point&Click</p>
+                            </div>
+                        </div>
+                        <div class="flex-child">
+                            <div class="image image-left">
+                                <img src="img/game_files/our-will-cover.png" alt="">
+                                <button class="image-button">
+                                    <label for="toggle-ourwill" class="open-slide">Continue Reading</label>
+                                </button>
+                            </div>
+                            <div class="text-content">
+                                <h4>Our Will</h4>
+                                <p>Tactical RPG</p>
                             </div>
                         </div>
                     </div>
                     <p></p>
-                    <p><a href="https://karane.itch.io/" target="_blank">Check my itch.io for more games</a></p>
+                    <p>Check <a href="https://karane.itch.io/" target="_blank">my itch.io</a> or <a href="https://barking-beagle-studios.itch.io/" target="_blank">Barking Beagle's itch.io</a> for more games</p>
                 </div>
             </section>
             <section id="video" class="content-section">
