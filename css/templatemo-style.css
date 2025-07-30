@@ -8,16 +8,21 @@ https://templatemo.com/tm-518-sentra
 
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden !important;
 }
 
 p {
   font-size: 13px;
-  color: #7a7a7a;
+  color: #F0F0F0;
   line-height: 24px;
 }
 
+a {
+  color: #6C95EB;
+}
+
 .page-content {
-  width: 77.5%;
+  width: 82%;
   float: right;
 }
 
@@ -28,6 +33,7 @@ p {
   display: inline-block;
   height: auto;
   left: 50%;
+  background-color: #2B2B2B;
   text-align: center;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -42,25 +48,29 @@ p {
   margin-bottom: 60px;
 }
 
+/*first part of heading*/
 .section-heading h1 {
   margin-top: 0px;
   font-size: 32px;
-  color: #232323;
+  color: #6C95EB;
   display: inline-block;
   margin-right: 50px;
 }
 
+/*second part of heading*/
 .section-heading em {
   font-style: normal;
   font-weight: 700;
-  color: #45489a;
+  color: #C191FF;
 }
 
+/*little quotes*/
 .section-heading p {
   display: inline-block;
+  font-weight: normal;
   font-size: 15px;
   line-height: 26px;
-  color: #343434;
+  color: #85C46C;
   position: absolute;
   top: 12.5px;
 }
@@ -68,9 +78,9 @@ p {
 .white-button a {
   font-size: 13px;
   font-weight: 600;
-  color: #45489a;
+  color: #2B2B2B;
   text-transform: capitalize;
-  background-color: #fff;
+  background-color: #85C46C;
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -81,16 +91,16 @@ p {
 }
 
 .white-button a:hover {
-  background-color: #45489a;
-  color: #fff;
+  background-color: #6C95EB;
+  color: #2B2B2B;
 }
 
 .accent-button a {
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: #2B2B2B;
   text-transform: capitalize;
-  background-color: #45489a;
+  background-color: #6C95EB;
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -101,8 +111,8 @@ p {
 }
 
 .accent-button a:hover {
-  background-color: #fff;
-  color: #45489a;
+  background-color: #85C46C;
+  color: #2B2B2B;
 }
 
 header {
@@ -159,7 +169,7 @@ header {
 #main-nav ul li a {
   font-size: 15px;
   text-transform: capitalize;
-  color: #fff;
+  color: #F0F0F0;
   box-shadow: none;
   border: none;
 }
@@ -177,7 +187,7 @@ header {
 /* Sidebar Style */
 
 .sidebar-navigation {
-  width: 22.5%;
+  width: 18%;
   float: left;
   height: 100%;
   position: fixed;
@@ -189,14 +199,14 @@ header {
   position: absolute;
   width: 100%;
   height: auto;
-  background-color: #45489a;
+  background-color: #6C95EB;
   padding: 20px;
   text-align: center;
 }
 
 .sidebar-navigation .logo a {
   text-decoration: none;
-  color: #fff;
+  color: #F0F0F0;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -216,7 +226,7 @@ header {
   font-weight: 400; /* Adjust weight as necessary */
   margin: 0; /* Remove default margin */
   padding-top: 5px; /* Add some spacing between the lines */
-  color: white;
+  color: #F0F0F0;
 }
 
 .sidebar-navigation nav {
@@ -244,7 +254,7 @@ header {
 }
 .sidebar-navigation nav a{
   display: inline-block;
-  color: #fff;
+  color: #F0F0F0;
   margin-top: 5px;
   text-decoration: none!important;
   font-size: 15px;
@@ -259,7 +269,7 @@ header {
   top: -1px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #F0F0F0;
   transition: all 0.3s;
 }
 .rect{
@@ -267,16 +277,16 @@ header {
   width: 0px;
   left: 0;
   bottom: 5.5px;
-  background-color: #fff;
+  background-color: #F0F0F0;
   -webkit-transition: -webkit-transform 0.1s, width 0.6s;
   -moz-transition: -webkit-transform 0.1s, width 0.6s;
   transition: transform 0.1s, width 0.6s;
 }
 .sidebar-navigation nav a:focus {
-  color: #fff;
+  color: #F0F0F0;
 }
 .sidebar-navigation nav a:hover, nav .active-section {
-  color: #fff;
+  color: #F0F0F0;
 }
 .sidebar-navigation nav a:hover span, nav .active-section span{
   background-color: #ddd;
@@ -285,7 +295,7 @@ header {
   width: 30px;
 }
 .sidebar-navigation nav .active-section .circle{
-  background-color: #fff;
+  background-color: #F0F0F0;
 }
 
 .sidebar-navigation .social-icons {
@@ -309,7 +319,7 @@ header {
 
 .sidebar-navigation .social-icons li a {
   font-size: 18px;
-  color: #fff;
+  color: #F0F0F0;
   transition: all 0.5s;
 }
 
@@ -330,7 +340,7 @@ header {
 }
 
 .slider p a {
-	color: #FFF;
+	color: #F0F0F0;
 }
 .slider p a:hover {
 	color: #FF0;
@@ -359,13 +369,13 @@ header {
   margin-top: 0px;
   margin-bottom: 15px;
   font-size: 48px;
-  color: #fff;
+  color: #F0F0F0;
   font-weight: 700;
 }
 
 .Modern-Slider .info p {
   font-size: 15px;
-  color: #fff;
+  color: #F0F0F0;
 }
 
 .Modern-Slider .info .white-button {
@@ -393,7 +403,7 @@ header {
   margin-top:-22.5px;
   text-align:center;
   font:32px/50px FontAwesome;
-  color:#FFF;
+  color:#F0F0F0;
   z-index:5;
 }
 
@@ -411,7 +421,7 @@ header {
   margin-top:-22.5px;
   text-align:center;
   font:32px/50px FontAwesome;
-  color:#FFF;
+  color:#F0F0F0;
   z-index:5;
 }
 
@@ -428,7 +438,7 @@ header {
 }
 
 .Modern-Slider .item-2 .image {
-  background-image: url(../img/game_files/ecosphere_project_logo.png);
+  background-image: url(../img/game_files/pigeon-bg.png);
 }
 
 .Modern-Slider .item-3 .image {
@@ -437,10 +447,6 @@ header {
 
 .Modern-Slider .PrevArrow:before{content:'\f104';}
 
-.Modern-Slider .item .image {
-  animation: zoomin 12s ease-in-out infinite alternate;
-  -webkit-animation: zoomin 12s ease-in-out infinite alternate;
-}
 
 @keyframes zoomin {
     0% {-webkit-transform: scale(1);}
@@ -469,8 +475,6 @@ header {
 #featured {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 80px;
-  border-bottom: 1px solid #eee;
 }
 
 #featured .section-heading {
@@ -533,7 +537,7 @@ header {
 
 #featured .owl-nav span:hover {
   background-color: #45489a;
-  color: #fff;
+  color: #F0F0F0;
 }
 
 #featured .item {
@@ -554,7 +558,7 @@ header {
 #featured .item .image .featured-button a {
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: #F0F0F0;
   text-align: center;
   text-transform: capitalize;
   background-color: rgba(69,72,154, 0.9);
@@ -578,7 +582,7 @@ header {
 
 #featured .item .text-content {
   padding-top: 20px;
-  background-color: #fff;
+  background-color: ghostwhite;
   position: relative;
   z-index: 10;
 }
@@ -633,7 +637,7 @@ header {
 
 #video {
   text-align: left;
-  background-color: #f4f4f4;
+  background-color: #2B2B2B;
   padding: 100px 60px;
 }
 
@@ -681,7 +685,7 @@ header {
   display: inline-block;
   width: 60px;
   height: 60px;
-  background:#fff;
+  background:#F0F0F0;
   border-radius: 50%;
   text-indent: -999em;
   cursor: pointer;
@@ -768,12 +772,12 @@ header {
 
 
 #blog .tabs .active:hover {
-  color: #fff;
+  color: #F0F0F0;
 }
 
 #blog .tabs .active {
   background-color: #45489a;
-  color: #fff;
+  color: #F0F0F0;
 }
 
 .tabgroup {
@@ -823,7 +827,7 @@ header {
   margin-bottom: 5px;
   font-size: 21px;
   font-weight: 600;
-  color: #232323;
+  color: #C191FF;
   letter-spacing: 0.5px;
 }
 
@@ -889,7 +893,7 @@ header {
   font-size: 13px;
   border-radius: 0px;
   font-weight: 600;
-  color: #fff;
+  color: #F0F0F0;
   text-transform: capitalize;
   background-color: #45489a;
   display: inline-block;
@@ -925,14 +929,14 @@ header {
   margin-bottom: 0px;
   font-size: 13px;
   line-height: 80px;
-  color: #fff;
+  color: #F0F0F0;
   letter-spacing: 0.5px;
   font-weight: 300;
 }
 
 .footer p a {
   text-decoration: none;
-  color: #fff;
+  color: #F0F0F0;
   font-weight: 600;
 }
 
@@ -996,7 +1000,7 @@ header {
     border:0 none;
     text-align:center;
     font:32px/50px FontAwesome;
-    color:#FFF;
+    color:#F0F0F0;
     z-index:5;
   }
 
@@ -1015,7 +1019,7 @@ header {
     border:0 none;
     text-align:center;
     font:32px/50px FontAwesome;
-    color:#FFF;
+    color:#F0F0F0;
     z-index:5;
   }
 
@@ -1109,14 +1113,14 @@ header {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 24px;
-    color: #fff;
+    color: #F0F0F0;
     font-weight: 700;
     text-align: right;
   }
 
   .Modern-Slider .info p {
     font-size: 12px;
-    color: #fff;
+    color: #F0F0F0;
     text-align: right;
   }
 
@@ -1148,7 +1152,7 @@ header {
     margin-top:-22.5px;
     text-align:center;
     font:32px/50px FontAwesome;
-    color:#FFF;
+    color:#F0F0F0;
     z-index:5;
   }
 
@@ -1163,7 +1167,7 @@ header {
     margin-top:-22.5px;
     text-align:center;
     font:32px/50px FontAwesome;
-    color:#FFF;
+    color:#F0F0F0;
     z-index:5;
   }
 
