@@ -115,7 +115,7 @@
 
 /* Initial style for the sliding box */
 .sliding-box {
-    position: absolute;
+    position: fixed;
     width: calc(100% - 60px); /* Full width minus padding */
     max-width: 100vw;
     height: auto;
@@ -245,6 +245,20 @@
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    body.modal-open .section-content-games {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    body.modal-open .sliding-box {
+        display: flex; /* or block/flex depending on your layout */
+    }
+
 }
 
 /* Ensuring the text does not break awkwardly */
